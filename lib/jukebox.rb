@@ -32,3 +32,4 @@ def play (array)
       puts "Invalid input, please try again"
     end
 end
+
