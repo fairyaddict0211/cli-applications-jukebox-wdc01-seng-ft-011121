@@ -33,3 +33,9 @@ def play (array)
     end
 end
 
+def list (array)
+  array.each_with_index do | s , i |
+    puts "#{i + 1}. #{s}"
+  end
+end
+
