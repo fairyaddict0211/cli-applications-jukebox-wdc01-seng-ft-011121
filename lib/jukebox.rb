@@ -17,3 +17,18 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def play (array)
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  array.each_with_index do | s , i |
+    if input == s 
+      puts "Playing #{s}"
+    elsif input.to_i == (i + 1)
+      puts "Playing #{s}"
+    end
+  end
+  if array.include?("#{input}") == false
+      puts "Invalid input, please try again"
+    end
+end
